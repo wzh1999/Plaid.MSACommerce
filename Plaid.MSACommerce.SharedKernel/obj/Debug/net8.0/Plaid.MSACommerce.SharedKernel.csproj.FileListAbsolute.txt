@@ -1,0 +1,13 @@
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.deps.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.csproj.AssemblyReference.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.AssemblyInfoInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.AssemblyInfo.cs
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.csproj.CoreCompileInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.sourcelink.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\refint\Plaid.MSACommerce.SharedKernel.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\Plaid.MSACommerce.SharedKernel.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.SharedKernel\obj\Debug\net8.0\ref\Plaid.MSACommerce.SharedKernel.dll

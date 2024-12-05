@@ -1,0 +1,12 @@
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.deps.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.AssemblyInfoInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.AssemblyInfo.cs
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.csproj.CoreCompileInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.sourcelink.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\refint\Plaid.MSACommerce.Uservice.Core.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Core\obj\Debug\net8.0\ref\Plaid.MSACommerce.Uservice.Core.dll

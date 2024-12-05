@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Plaid.MSACommerce.Uservice.Core/1.0.0": {
+        "runtime": {
+          "Plaid.MSACommerce.Uservice.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Plaid.MSACommerce.Uservice.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

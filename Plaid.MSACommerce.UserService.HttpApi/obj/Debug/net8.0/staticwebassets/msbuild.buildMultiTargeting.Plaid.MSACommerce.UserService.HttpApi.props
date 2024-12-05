@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Plaid.MSACommerce.UserService.HttpApi.props" />
+</Project>

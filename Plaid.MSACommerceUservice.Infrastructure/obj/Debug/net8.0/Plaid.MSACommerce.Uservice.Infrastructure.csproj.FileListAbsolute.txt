@@ -1,0 +1,12 @@
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.deps.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.AssemblyInfoInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.AssemblyInfo.cs
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.csproj.CoreCompileInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.sourcelink.json
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\refint\Plaid.MSACommerce.Uservice.Infrastructure.dll
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerceUservice.Infrastructure\obj\Debug\net8.0\ref\Plaid.MSACommerce.Uservice.Infrastructure.dll
