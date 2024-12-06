@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nH+nGvd5F0076tYWgGj4VxAQGwNnxynbvNXfZphDeGE=",
+  "Source": "Plaid.MSACommerce.UserService.HttpApi",
+  "BasePath": "_content/Plaid.MSACommerce.UserService.HttpApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
