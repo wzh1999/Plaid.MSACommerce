@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Plaid.MSACommerce.SharedKernel.Domain
 {
+    /// <summary> 
+    /// 领域事件抽象类  INotification基于MediatR通知接口
+    /// </summary>
     public abstract class BaseEvent:INotification
     {
         /// <summary>

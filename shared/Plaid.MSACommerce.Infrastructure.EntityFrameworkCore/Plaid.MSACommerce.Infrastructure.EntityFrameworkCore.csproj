@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Interceptors\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Plaid.MSACommerce.SharedKernel\Plaid.MSACommerce.SharedKernel.csproj" />
+    <ProjectReference Include="..\Plaid.MSACommerce.UseCases.Common\Plaid.MSACommerce.UseCases.Common.csproj" />
   </ItemGroup>
 
 </Project>
