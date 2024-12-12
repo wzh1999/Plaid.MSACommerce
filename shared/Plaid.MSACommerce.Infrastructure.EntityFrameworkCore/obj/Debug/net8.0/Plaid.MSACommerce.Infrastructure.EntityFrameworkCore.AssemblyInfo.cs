@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.Infrastructure.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cde558d4b30c3d1ae1ca2b48cf289bf4abafde8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2aeb75b5db94afd683f57e8aedbf41ef5507ed0d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.Infrastructure.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.Infrastructure.EntityFrameworkCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
