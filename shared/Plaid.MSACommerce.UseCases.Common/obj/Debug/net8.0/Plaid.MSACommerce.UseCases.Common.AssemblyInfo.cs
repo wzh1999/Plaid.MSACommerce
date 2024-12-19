@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.UseCases.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0481b56f77171f5ccb9b10a094b0e763b90fe487")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ab3994291937ea97ae87fa45192d9bd6042feba")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.UseCases.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.UseCases.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

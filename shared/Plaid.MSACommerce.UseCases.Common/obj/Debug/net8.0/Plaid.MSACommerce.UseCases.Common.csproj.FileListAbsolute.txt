@@ -22,3 +22,7 @@ E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\obj\Debug\net8.0\refint\Plaid.MSACommerce.UseCases.Common.dll
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\obj\Debug\net8.0\Plaid.MSACommerce.UseCases.Common.pdb
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\obj\Debug\net8.0\ref\Plaid.MSACommerce.UseCases.Common.dll
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.dll
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\obj\Debug\net8.0\Plaid.MSACommerce.UseCases.Common.csproj.AssemblyReference.cache
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.UseCases.Common\obj\Debug\net8.0\Plaid.MS.19B3A2D3.Up2Date
