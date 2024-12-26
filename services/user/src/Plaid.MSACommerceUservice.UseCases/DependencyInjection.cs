@@ -13,7 +13,7 @@ namespace Plaid.MSACommerceUservice.UseCases
         /// </summary>
         /// <param name="services"></param>
         /// <returns></returns>
-        public static IServiceContainer AddUseCase(this IServiceContainer services)
+        public static IServiceCollection AddUseCase(this IServiceCollection services)
         {
             services.AddUseCaseCommon(Assembly.GetExecutingAssembly());
             return services;
