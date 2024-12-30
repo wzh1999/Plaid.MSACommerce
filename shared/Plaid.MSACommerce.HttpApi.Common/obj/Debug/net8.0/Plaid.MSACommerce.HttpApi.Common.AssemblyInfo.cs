@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.HttpApi.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e114c38a07fc6f039580558c86b9067df9ba15d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0628a736ddd8024000c130c2e65bb17416d5d14b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.HttpApi.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.HttpApi.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
