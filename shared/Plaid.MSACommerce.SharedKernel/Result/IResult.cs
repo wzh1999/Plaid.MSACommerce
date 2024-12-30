@@ -29,6 +29,6 @@ namespace Plaid.MSACommerce.SharedKernel.Result
         /// <summary>
         /// 
         /// </summary>
-        object? GetValue { get; }
+        object? GetValue();
     }
 }
