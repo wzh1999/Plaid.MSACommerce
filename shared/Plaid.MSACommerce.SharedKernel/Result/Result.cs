@@ -46,8 +46,6 @@ namespace Plaid.MSACommerce.SharedKernel.Result
         /// </summary>
         public ResultStatus Status { get; protected set; } = ResultStatus.Ok;
 
-        object? IResult.GetValue => throw new NotImplementedException();
-
         public object? GetValue()
         {
             return Value;
