@@ -18,6 +18,6 @@ namespace Plaid.MSACommerce.UseCases.Common.Interfaces
         /// <summary>
         /// 用户名称
         /// </summary>
-        string? Name { get; }
+        string? Username { get; }
     }
 }
