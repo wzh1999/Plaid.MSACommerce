@@ -10,12 +10,6 @@ E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.Infrastructure.EntityF
 E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\refint\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll
 E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.pdb
 E:\资料\个人\Code\Plaid.MSACommerce\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\ref\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj.AssemblyReference.cache
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.AssemblyInfoInputs.cache
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.AssemblyInfo.cs
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj.CoreCompileInputs.cache
-E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.sourcelink.json
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.deps.json
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.pdb
@@ -23,6 +17,12 @@ E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.UseCases.Common.dll
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.SharedKernel.pdb
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\bin\Debug\net8.0\Plaid.MSACommerce.UseCases.Common.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj.AssemblyReference.cache
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.AssemblyInfoInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.AssemblyInfo.cs
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.sourcelink.json
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MS.8DC070BD.Up2Date
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll
 E:\资料\个人\Code\Plaid.MSACommerce\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\obj\Debug\net8.0\refint\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll

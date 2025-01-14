@@ -1,0 +1,54 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Plaid.MSACommerce.Infrastructure.EntityFrameworkCore;
+using Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.Interceptors;
+using Plaid.MSACommerce.Uservice.Infrastructure.Data;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Contracts;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Plaid.MSACommerce.Uservice.Infrastructure
+{
+    /// <summary>
+    /// .NET配置扩展方法
+    /// </summary>
+    public static class DependencyInjection
+    {
+        /// <summary>
+        /// 服务配置扩展方法
+        /// </summary>
+        /// <param name="services">服务配置上下文</param>
+        /// <param name="configuration">读取环境配置上下文</param>
+        /// <returns></returns>
+        public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        {
+            //加载公共服务中的ef中的扩展方法配置信息
+            services.AddInfrastructureCommon();
+            ConfigureEfCore(services, configuration);
+            return services;
+        }
+
+        /// <summary>
+        /// 配置数据库链接,数据库上下文注入
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        private static void ConfigureEfCore(IServiceCollection services, IConfiguration configuration)
+        {
+
+            var dbConnection = configuration.GetConnectionString("UserDbConnection");
+            services.AddDbContext<UserDbContext>((sp, options) =>
+            {
+                //添加拦截器
+                //AddInterceptors 方法把自定义的 AuditEntityInterceptor 拦截器添加到 DbContext，让它在数据库操作（如 SaveChanges）时起作用。
+                //通过这种方式，可以在所有数据库操作中实现统一的审计逻辑，而无需在每个操作中手动添加审计代码。
+                options.AddInterceptors(sp.GetRequiredService<AuditEntityInterceptor>());
+                options.UseMySql(dbConnection, ServerVersion.AutoDetect(dbConnection));
+            });
+        }
+    }
+}

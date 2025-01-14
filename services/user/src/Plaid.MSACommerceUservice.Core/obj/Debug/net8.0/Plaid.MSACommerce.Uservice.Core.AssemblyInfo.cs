@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.Uservice.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a016808cfea93b798963ea97253172222788f227")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+464b2d81c2524ae6de458ae105c676ca7f73bc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.Uservice.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.Uservice.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

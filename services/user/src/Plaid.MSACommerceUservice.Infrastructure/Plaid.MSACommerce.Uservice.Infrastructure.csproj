@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\Plaid.MSACommerceUservice.Core\Plaid.MSACommerce.Uservice.Core.csproj" />
+  </ItemGroup>
+
 </Project>

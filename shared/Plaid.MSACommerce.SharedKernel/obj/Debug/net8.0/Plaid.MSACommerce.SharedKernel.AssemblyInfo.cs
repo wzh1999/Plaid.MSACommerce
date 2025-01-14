@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.SharedKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ced248bcbe065a73edb81fce534c8237d998151")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+464b2d81c2524ae6de458ae105c676ca7f73bc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.SharedKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.SharedKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
