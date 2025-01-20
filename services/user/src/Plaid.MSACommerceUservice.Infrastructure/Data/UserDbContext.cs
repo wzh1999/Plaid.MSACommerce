@@ -12,10 +12,13 @@ namespace Plaid.MSACommerce.Uservice.Infrastructure.Data
     /// <summary>
     /// 定义数据交互上下文
     /// (DbContextOptions<UserDbContext> options) : DbContext(options)显示构造自己数据库上下文
-    /// </summary>
+    /// DbContextOptions<UserDbContext> options 必须要有这个,用于将IOC容器上下文传递进来(包括数据库链接等信息)
+    /// summary>
     /// <param name="options">用于构造注入配置数据库链接字符</param>
     public class UserDbContext(DbContextOptions<UserDbContext> options) : DbContext(options)
     {
+       
+
         //配置实体
         public DbSet<TbUser> TbUser => Set<TbUser>();
 
@@ -29,6 +32,7 @@ namespace Plaid.MSACommerce.Uservice.Infrastructure.Data
             //通过实现提取到专门的类中继承IEntityTypeConfiguration 从而减少这个方法的内容
             //自动加载并应用当前程序集中的所有 IEntityTypeConfiguration<T> 配置
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            
         }
     }
 }

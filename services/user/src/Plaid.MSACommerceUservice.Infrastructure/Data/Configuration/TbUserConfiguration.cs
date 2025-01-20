@@ -19,16 +19,16 @@ namespace Plaid.MSACommerce.Uservice.Infrastructure.Data.Configuration
             builder.ToTable("tb_user");//配置实体和表名映射关系
 
             builder.Property(e => e.Id)
-                .HasColumnName("id");
+                .HasColumnName("id"); 
 
             builder.HasIndex(e => e.Username)
-                .IsUnique();
+                .IsUnique(); //唯一约束
 
             builder.Property(e => e.Username)
-                .IsRequired()
-                .HasColumnName("username")
-                .HasMaxLength(DataSchemaConstants.DafeultUsernameMaxLength)
-                .HasComment("用户名");
+                .IsRequired() //是否为空
+                .HasColumnName("username") //数据库字段说明
+                .HasMaxLength(DataSchemaConstants.DafeultUsernameMaxLength) //最大长度
+                .HasComment("用户名"); //说明
 
             builder.Property(e => e.Password)
                 .IsRequired()
