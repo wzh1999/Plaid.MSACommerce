@@ -18,6 +18,11 @@ namespace Plaid.MSACommerce.Uservice.Core
         /// <summary>
         /// 密码最大长度
         /// </summary>
+        public const int DafeultPasswordMinLength = 6;
+
+        /// <summary>
+        /// 密码最大长度
+        /// </summary>
         public const int DafeultPasswordMaxLength = 128;
         /// <summary>
         /// 手机号最大长度

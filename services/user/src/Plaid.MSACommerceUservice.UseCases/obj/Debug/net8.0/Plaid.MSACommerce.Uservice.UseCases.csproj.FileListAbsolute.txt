@@ -28,3 +28,9 @@ E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUserv
 E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\obj\Debug\net8.0\refint\Plaid.MSACommerce.Uservice.UseCases.dll
 E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\obj\Debug\net8.0\Plaid.MSACommerce.Uservice.UseCases.pdb
 E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\obj\Debug\net8.0\ref\Plaid.MSACommerce.Uservice.UseCases.dll
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.dll
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.dll
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.dll
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Core.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Uservice.Infrastructure.pdb
+E:\资料\个人\Code\Plaid.MSACommerce\services\user\src\Plaid.MSACommerceUservice.UseCases\bin\Debug\net8.0\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.pdb

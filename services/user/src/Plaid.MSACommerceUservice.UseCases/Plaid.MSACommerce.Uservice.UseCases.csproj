@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\shared\Plaid.MSACommerce.UseCases.Common\Plaid.MSACommerce.UseCases.Common.csproj" />
+    <ProjectReference Include="..\Plaid.MSACommerceUservice.Core\Plaid.MSACommerce.Uservice.Core.csproj" />
+    <ProjectReference Include="..\Plaid.MSACommerceUservice.Infrastructure\Plaid.MSACommerce.Uservice.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
