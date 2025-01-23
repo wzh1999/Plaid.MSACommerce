@@ -15,8 +15,4 @@
     <ProjectReference Include="..\Plaid.MSACommerceUservice.UseCases\Plaid.MSACommerce.Uservice.UseCases.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

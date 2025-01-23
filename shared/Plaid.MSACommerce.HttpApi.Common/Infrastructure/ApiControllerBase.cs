@@ -20,6 +20,7 @@ namespace Plaid.MSACommerce.HttpApi.Common.Infrastructure
     {
         /// <summary>
         /// 注入Sender实例，基于MediatR库，用于消息的发送(如命令、查询)
+        /// 通过查询HttpContext.RequestServices.GetRequiredServic请求上下文依赖注入容器（DI）获取Send对象,这样只要继承自它就可以直接使用MediatR实例,当然也可以继续使用依赖构造函数注入
         /// </summary>
         protected ISender Sender => HttpContext.RequestServices.GetRequiredService<ISender>();
 

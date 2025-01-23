@@ -21,8 +21,10 @@ namespace Plaid.MSACommerce.HttpApi.Common
         public static IServiceCollection AddHttpApiCommon(this IServiceCollection services)
         {
             services.AddScoped<IUser, CurrentUser>();
+            //获取应用程序的任何地方访问当前的 HTTP 上下文。
             services.AddHttpContextAccessor();
             services.AddExceptionHandler<UseCaseExceptionHandler>();
+            //设置标准 API 返回标准化的错误响应
             services.AddProblemDetails();
             ConfigureCors(services);
             return services;
