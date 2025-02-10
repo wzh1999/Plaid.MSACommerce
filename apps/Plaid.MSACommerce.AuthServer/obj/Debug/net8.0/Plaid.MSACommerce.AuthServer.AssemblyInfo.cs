@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.HttpApi.Common")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Plaid.MSACommerce.AuthServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c9c2a2250952e756a34139b2534bcbd538acd12")]
-[assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.HttpApi.Common")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.HttpApi.Common")]
+[assembly: System.Reflection.AssemblyProductAttribute("Plaid.MSACommerce.AuthServer")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Plaid.MSACommerce.AuthServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

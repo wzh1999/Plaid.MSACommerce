@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.UseCases.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{8CB04F0E-3D10-48BA-AD26-96DC0D1F57AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.AuthServer", "apps\Plaid.MSACommerce.AuthServer\Plaid.MSACommerce.AuthServer.csproj", "{94BA9057-77F5-43BD-B004-0DF976C89D53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{BB08581D-1B93-4A65-BB40-2EDCA1C2C6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB08581D-1B93-4A65-BB40-2EDCA1C2C6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB08581D-1B93-4A65-BB40-2EDCA1C2C6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BA9057-77F5-43BD-B004-0DF976C89D53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BA9057-77F5-43BD-B004-0DF976C89D53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BA9057-77F5-43BD-B004-0DF976C89D53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BA9057-77F5-43BD-B004-0DF976C89D53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{DA97E5E0-5925-404D-96FA-15401EAC73BE} = {09ED29BC-1766-42F3-B297-7F56A9D5C384}
 		{77E8B1F8-79F1-4ADE-AC6A-63A4471BBC5E} = {09ED29BC-1766-42F3-B297-7F56A9D5C384}
 		{BB08581D-1B93-4A65-BB40-2EDCA1C2C6ED} = {09ED29BC-1766-42F3-B297-7F56A9D5C384}
+		{94BA9057-77F5-43BD-B004-0DF976C89D53} = {8CB04F0E-3D10-48BA-AD26-96DC0D1F57AF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {627E3806-584D-4CDB-A1F1-55C91731C3E2}
