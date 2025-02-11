@@ -3,3 +3,24 @@
 ################################################################################
 
 /.vs
+/services/user/src/Plaid.MSACommerce.UserService.HttpApi/bin/
+/services/user/src/Plaid.MSACommerce.UserService.HttpApi/obj/
+/services/user/src/Plaid.MSACommerceUservice.Core/bin/
+/services/user/src/Plaid.MSACommerceUservice.Core/obj/
+/services/user/src/Plaid.MSACommerceUservice.Infrastructure/bin/
+/services/user/src/Plaid.MSACommerceUservice.Infrastructure/obj/
+/services/user/src/Plaid.MSACommerceUservice.UseCases/bin/
+/services/user/src/Plaid.MSACommerceUservice.UseCases/obj/
+
+/shared/Plaid.MSACommerce.HttpApi.Common/bin/
+/shared/Plaid.MSACommerce.HttpApi.Common/obj/
+/shared/Plaid.MSACommerce.Infrastructure.EntityFrameworkCore/bin/
+/shared/Plaid.MSACommerce.Infrastructure.EntityFrameworkCore/obj/
+/shared/Plaid.MSACommerce.SharedKernel/bin/
+/shared/Plaid.MSACommerce.SharedKernel/obj/
+/shared/Plaid.MSACommerce.UseCases.Common/bin/
+/shared/Plaid.MSACommerce.UseCases.Common/obj/
+
+
+/apps/Plaid.MSACommerce.AuthServer/bin/
+/apps/Plaid.MSACommerce.AuthServer/obj/
