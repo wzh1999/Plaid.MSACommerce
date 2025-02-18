@@ -18,6 +18,7 @@ namespace Plaid.MSACommerce.AuthServer.Services
         public async Task<Result<string>> GetAccessTokenAsync(string username, string password)
         {
             //验证用户名和密码
+            //由refti服务进行请求通过读取注册的BaseAddress地址+方法标记的请求地址和请求方式进行HttpClient请求
             var response = await userService.GetUserAsync(username, password);
             if (!response.IsSuccessStatusCode)
             {

@@ -15,8 +15,10 @@ namespace Plaid.MSACommerce.AuthServer
 
         private static void ConfigureUserService(IServiceCollection services, IConfiguration configuration)
         {
+            //读取请求的url地址
             var userServiceUrl = configuration["ServiceUrls:UserService"];
             if (userServiceUrl is null) throw new NullReferenceException(nameof(userServiceUrl));
+            //通过HttpClientFactory配置BaseAddress地址,也就是请求url地址
             services.AddRefitClient<IUserService>()
                .ConfigureHttpClient(clinet =>
                {
