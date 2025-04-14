@@ -27,7 +27,8 @@ namespace Plaid.MSACommerce.AuthServer.Services
             var user = response.Content;
             //创建 JWT
             var jwt = new JwtSecurityToken(
-                jwtSettings.Value.Issuer, jwtSettings.Value.Audience,
+                jwtSettings.Value.Issuer, 
+                jwtSettings.Value.Audience,
                 new[]
                 {
                     new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
