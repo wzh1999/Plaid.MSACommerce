@@ -1,0 +1,25 @@
+{
+  "Routes": [
+    {
+      "ServiceName": "Plaid.MSACommerce.AuthServer",
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/auth/swagger.json",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "Key": "UserServiceSwagger",
+      "ServiceName": "Plaid.MSACommerce.UserService.HttpApi",
+      "DownstreamPathTemplate": "/swagger/v1/swagger.json",
+      "DownstreamScheme": "http",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "UpstreamPathTemplate": "/user/swagger.json",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ]
+}
