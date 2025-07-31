@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{8CB04F0E-3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.AuthServer", "apps\Plaid.MSACommerce.AuthServer\Plaid.MSACommerce.AuthServer.csproj", "{94BA9057-77F5-43BD-B004-0DF976C89D53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.WebGateway", "..\gateways\Plaid.MSACommerce\Plaid.MSACommerce.WebGateway\Plaid.MSACommerce.WebGateway.csproj", "{DB90ACD0-2632-401B-AA1C-5A43D64860E3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.WebGateway", "gateways\Plaid.MSACommerce.WebGateway\Plaid.MSACommerce.WebGateway.csproj", "{DB90ACD0-2632-401B-AA1C-5A43D64860E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
