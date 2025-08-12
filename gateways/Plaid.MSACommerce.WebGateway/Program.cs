@@ -1,22 +1,27 @@
-using Ocelot.DependencyInjection;
+ï»¿using Ocelot.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//ç”¨äºŽåŠ è½½å¤šé…ç½®ç®¡ç†å™¨çš„
 builder.Configuration.AddOcelot(
-    //ÅäÖÃÎÄ¼þÂ·¾¶£¬²ÉÓÃÏà¶ÔÂ·¾¶
+    //æŒ‡å®šocelotæŒ‡å®šçš„è·¯å¾„ï¼Œæ‰€åœ¨çš„æ–‡ä»¶å¤¹æ ¹ç›®å½•ï¼ŒæŒ‡å®šçš„æ˜¯ç›¸å¯¹è·¯å¾„
     folder: "./ocelot",
-    //±íÊ¾µ±Ç°ÔËÐÐ»·¾³¶ÔÏó£¬×÷ÓÃÊÊÓÃÓÚocelot×Ô¶¯¼ÓÔØ»·¾³ÅäÖÃÎÄ¼þ
+    //è¡¨ç¤ºä¼ å…¥å½“å‰çš„çŽ¯å¢ƒå¯¹è±¡ï¼Œè‡ªåŠ¨é€‰æ‹©æ ¹æ®çŽ¯å¢ƒåŠ è½½å¯¹åº”çš„é…ç½®æ–‡ä»¶
     env: builder.Environment,
-    //ocelot±íÊ¾¶à¸öÅäÖÃÎÄ¼þºÏ²¢µ½ÄÄÀïÈ¥£¬ºÏ²¢ÅäÖÃÎïÀíÎÄ¼þ(ºÃ´¦¿ÉÒÔÐÞ¸ÄÅäÖÃÎÄ¼þ)¡¢ÄÚ´æÎÄ¼þ
+    //è¡¨ç¤ºocelotçš„é…ç½®jsonæ–‡ä»¶åˆå¹¶æ–¹å¼ï¼Œåˆå¹¶åˆ°å“ªé‡ŒåŽ»ï¼Ÿ
+    //é…ç½®å¤šä¸ªocelot.jsonæ–‡ä»¶æ—¶åœ¨å¯åŠ¨çš„æ—¶å€™å°†åˆå¹¶æˆä¸€ä¸ªæ–‡ä»¶ï¼Œä¸¤ç§æ–¹å¼
+    //1.åˆå¹¶æˆç‰©ç†æ–‡ä»¶--ä¼šè‡ªåŠ¨ç”Ÿæˆç‰©ç†çš„å®Œæ•´é…ç½®æ–‡ä»¶
+    //2.åˆå¹¶åˆ°å†…å­˜ .ToMemory
     mergeTo: MergeOcelotJson.ToMemory,
-    //ÅäÖÃÎÄ¼þÊÇ¿ÉÑ¡
+    //è¡¨ç¤ºé…ç½®æ–‡ä»¶æ˜¯å¯é€‰çš„
     optional: false,
-    //ÎÄ¼þ·¢Éú¸Ä±ä×Ô¶¯¼ÓÔØ
+    //æ–‡ä»¶å‘ç”Ÿæ”¹å˜åŽå¯ä»¥è‡ªåŠ¨é‡æ–°åŠ è½½
     reloadOnChange: true
     );
 builder.Services.AddOcelot();
 //builder.Services.AddJwtBearer(builder.Configuration);
+
 // Add services to the container.
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -27,7 +32,13 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    //é…ç½®é›†æˆocelotåŽçš„swaggeruiå±•ç¤ºçš„æŽ¥å£å†…å®¹
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Gateway V1");
+        options.SwaggerEndpoint("/auth/swagger.json", "AuthServer V1");
+        options.SwaggerEndpoint("/user/swagger.json", "UserService V1");
+    });
 }
 
 app.Run();

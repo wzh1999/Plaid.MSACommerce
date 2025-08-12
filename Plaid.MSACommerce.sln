@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.AuthServe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.WebGateway", "gateways\Plaid.MSACommerce.WebGateway\Plaid.MSACommerce.WebGateway.csproj", "{DB90ACD0-2632-401B-AA1C-5A43D64860E3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pakages", "pakages", "{7159B0CC-30BC-4005-9D1D-9AD267930A56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
