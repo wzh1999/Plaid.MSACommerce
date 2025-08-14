@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.WebGatewa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pakages", "pakages", "{7159B0CC-30BC-4005-9D1D-9AD267930A56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.Authentication.JwtBearer", "pakages\Plaid.MSACommerce.Authentication.JwtBearer\Plaid.MSACommerce.Authentication.JwtBearer.csproj", "{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{DB90ACD0-2632-401B-AA1C-5A43D64860E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB90ACD0-2632-401B-AA1C-5A43D64860E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB90ACD0-2632-401B-AA1C-5A43D64860E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +109,7 @@ Global
 		{BB08581D-1B93-4A65-BB40-2EDCA1C2C6ED} = {09ED29BC-1766-42F3-B297-7F56A9D5C384}
 		{94BA9057-77F5-43BD-B004-0DF976C89D53} = {8CB04F0E-3D10-48BA-AD26-96DC0D1F57AF}
 		{DB90ACD0-2632-401B-AA1C-5A43D64860E3} = {004A0425-5B47-4C66-B6D3-327015F44E47}
+		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6} = {7159B0CC-30BC-4005-9D1D-9AD267930A56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {627E3806-584D-4CDB-A1F1-55C91731C3E2}

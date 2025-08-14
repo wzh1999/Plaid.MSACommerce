@@ -8,6 +8,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 
 namespace Plaid.MSACommerce.HttpApi.Common
 {
@@ -27,6 +29,7 @@ namespace Plaid.MSACommerce.HttpApi.Common
             //设置标准 API 返回标准化的错误响应
             services.AddProblemDetails();
             ConfigureCors(services);
+            ConfigureSwagger(services);
             return services;
         }
 
@@ -41,6 +44,47 @@ namespace Plaid.MSACommerce.HttpApi.Common
                 options.AddPolicy("AllowAny", builder =>
                 {
                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                });
+            });
+        }
+        
+        /// <summary>
+        /// 将swagger 统一成一个，并对这个swagger描述和增加鉴权授权
+        /// </summary>
+        /// <param name="services"></param>
+        private static void ConfigureSwagger(IServiceCollection services)
+        {
+            services.AddEndpointsApiExplorer();
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "电商平台 API 文档",
+                    Version = "v1",
+                    Description = "一个微服务架构的电商平台实战项目"
+                });
+
+                options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Name = "JWT Bearer 认证",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer",
+                    BearerFormat = "JWT"
+                });
+                options.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Id = "Bearer",
+                                Type = ReferenceType.SecurityScheme
+                            }
+                        },
+                        new string[] { }
+                    }
                 });
             });
         }

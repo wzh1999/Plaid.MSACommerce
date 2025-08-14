@@ -29,5 +29,3 @@
 /pakages/Plaid.MSACommerce.Authentication.JwtBearer/bin/
 /pakages/Plaid.MSACommerce.Authentication.JwtBearer/obj/
 /Plaid.MSACommerce.Authentication.JwtBearer/obj
-/Plaid.MSACommerce.Authentication.JwtBearer/DependencyInjection.cs
-/Plaid.MSACommerce.Authentication.JwtBearer/JwtSettings.cs

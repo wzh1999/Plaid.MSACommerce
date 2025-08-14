@@ -1,3 +1,4 @@
+using Plaid.MSACommerce.Authentication.JwtBearer;
 using Plaid.MSACommerce.UserService.HttpApi;
 using Plaid.MSACommerce.Uservice.Infrastructure;
 using Plaid.MSACommerceUservice.UseCases;
@@ -5,13 +6,15 @@ using Plaid.MSACommerceUservice.UseCases;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-//Ìí¼ÓÊı¾İ¿âÅäÖÃÀ©Õ¹·şÎñ
+//æ·»åŠ æ•°æ®åº“é…ç½®æ‰©å±•æœåŠ¡
 builder.Services.AddInfrastructure(builder.Configuration);
-//Ìí¼Ó»ù´¡ÉèÊ©²ãÀ©Õ¹·şÎñ
+//æ·»åŠ åŸºç¡€è®¾æ–½å±‚æ‰©å±•æœåŠ¡
 builder.Services.AddUseCase();
-//Ìí¼ÓApi¿ØÖÆÆ÷ÖĞÀ©Õ¹·şÎñ
+//æ·»åŠ Apiæ§åˆ¶å™¨ä¸­æ‰©å±•æœåŠ¡
 builder.Services.AddHttpApi();
 builder.Services.AddControllers();
+//å¼•å…¥æƒé™éªŒè¯æœåŠ¡
+builder.Services.AddJwtBearer(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,7 +29,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+//æ·»åŠ æˆæƒä¸­é—´ä»¶
+app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();

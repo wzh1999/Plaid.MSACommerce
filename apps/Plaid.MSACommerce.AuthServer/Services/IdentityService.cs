@@ -10,7 +10,7 @@ namespace Plaid.MSACommerce.AuthServer.Services
     public class IdentityService(IUserService userService, IOptions<JwtSettings> jwtSettings) : IIdentityService
     {
         /// <summary>
-        /// 获取token
+        /// 获取token -进行授权
         /// </summary>
         /// <param name="username">用户名</param>
         /// <param name="password">密码</param>

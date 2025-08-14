@@ -1,4 +1,5 @@
 ﻿using Ocelot.DependencyInjection;
+using Plaid.MSACommerce.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 //用于加载多配置管理器的
@@ -18,8 +19,9 @@ builder.Configuration.AddOcelot(
     reloadOnChange: true
     );
 builder.Services.AddOcelot();
-//builder.Services.AddJwtBearer(builder.Configuration);
 
+//引入jwt验证的服务
+builder.Services.AddJwtBearer(builder.Configuration);
 // Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
