@@ -26,3 +26,8 @@
 /apps/Plaid.MSACommerce.AuthServer/obj/
 /gateways/Plaid.MSACommerce.WebGateway/bin/
 /gateways/Plaid.MSACommerce.WebGateway/obj/
+/pakages/Plaid.MSACommerce.Authentication.JwtBearer/bin/
+/pakages/Plaid.MSACommerce.Authentication.JwtBearer/obj/
+/Plaid.MSACommerce.Authentication.JwtBearer/obj
+/Plaid.MSACommerce.Authentication.JwtBearer/DependencyInjection.cs
+/Plaid.MSACommerce.Authentication.JwtBearer/JwtSettings.cs
