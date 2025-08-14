@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Plaid.MSACommerce.Authentication.JwtBearer\Plaid.MSACommerce.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\..\..\..\pakages\Plaid.MSACommerce.Authentication.JwtBearer\Plaid.MSACommerce.Authentication.JwtBearer.csproj" />
     <ProjectReference Include="..\..\..\..\shared\Plaid.MSACommerce.HttpApi.Common\Plaid.MSACommerce.HttpApi.Common.csproj" />
     <ProjectReference Include="..\Plaid.MSACommerceUservice.UseCases\Plaid.MSACommerce.Uservice.UseCases.csproj" />
   </ItemGroup>

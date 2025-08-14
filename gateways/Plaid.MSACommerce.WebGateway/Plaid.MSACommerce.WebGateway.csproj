@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Plaid.MSACommerce.Authentication.JwtBearer\Plaid.MSACommerce.Authentication.JwtBearer.csproj" />
+    <ProjectReference Include="..\..\pakages\Plaid.MSACommerce.Authentication.JwtBearer\Plaid.MSACommerce.Authentication.JwtBearer.csproj" />
   </ItemGroup>
 
 </Project>
