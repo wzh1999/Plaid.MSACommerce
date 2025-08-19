@@ -31,7 +31,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 //添加授权中间件
 app.UseAuthorization();
-app.UseAuthorization();
 
 app.MapControllers();
 

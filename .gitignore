@@ -28,4 +28,5 @@
 /gateways/Plaid.MSACommerce.WebGateway/obj/
 /pakages/Plaid.MSACommerce.Authentication.JwtBearer/bin/
 /pakages/Plaid.MSACommerce.Authentication.JwtBearer/obj/
-/Plaid.MSACommerce.Authentication.JwtBearer/obj
+/pakages/Plaid.MSACommerce.Consul/bin/
+/pakages/Plaid.MSACommerce.Consul/obj/
