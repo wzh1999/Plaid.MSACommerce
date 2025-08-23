@@ -1,5 +1,7 @@
 ﻿namespace Plaid.MSACommerce.Consul.ServiceRegistration;
-
+/// <summary>
+/// 服务配置类
+/// </summary>
 public class ServiceConfiguration
 {
     /// <summary>
