@@ -1,4 +1,5 @@
 using Plaid.MSACommerce.Authentication.JwtBearer;
+using Plaid.MSACommerce.HttpApi.Common;
 using Plaid.MSACommerce.UserService.HttpApi;
 using Plaid.MSACommerce.Uservice.Infrastructure;
 using Plaid.MSACommerceUservice.UseCases;
@@ -31,6 +32,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 //添加授权中间件
 app.UseAuthorization();
+
+//添加微服务统一配置中间件入口
+app.UseHttpCommon();
 
 app.MapControllers();
 

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\pakages\Plaid.MSACommerce.Consul\Plaid.MSACommerce.Consul.csproj" />
     <ProjectReference Include="..\Plaid.MSACommerce.SharedKernel\Plaid.MSACommerce.SharedKernel.csproj" />
     <ProjectReference Include="..\Plaid.MSACommerce.UseCases.Common\Plaid.MSACommerce.UseCases.Common.csproj" />
   </ItemGroup>

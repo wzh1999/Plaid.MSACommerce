@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.Authentic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.Consul", "pakages\Plaid.MSACommerce.Consul\Plaid.MSACommerce.Consul.csproj", "{BAC24845-5C57-4478-9994-150CF7854C58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plaid.MSACommerce.Infrastructure.Common", "Plaid.MSACommerce.Infrastructure.Common\Plaid.MSACommerce.Infrastructure.Common.csproj", "{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{BAC24845-5C57-4478-9994-150CF7854C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAC24845-5C57-4478-9994-150CF7854C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAC24845-5C57-4478-9994-150CF7854C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +123,7 @@ Global
 		{DB90ACD0-2632-401B-AA1C-5A43D64860E3} = {004A0425-5B47-4C66-B6D3-327015F44E47}
 		{D8185BB6-1EF9-4FB9-880B-F78983F1C0C6} = {7159B0CC-30BC-4005-9D1D-9AD267930A56}
 		{BAC24845-5C57-4478-9994-150CF7854C58} = {7159B0CC-30BC-4005-9D1D-9AD267930A56}
+		{1DF7CEC4-43C3-47E8-8599-C77A47DDD81D} = {09ED29BC-1766-42F3-B297-7F56A9D5C384}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {627E3806-584D-4CDB-A1F1-55C91731C3E2}
