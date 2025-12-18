@@ -9,7 +9,7 @@ namespace Plaid.MSACommerce.Authentication.JwtBearer;
 public static class DependencyInjection
 {
     /// <summary>
-    /// 进行jwt鉴权
+    /// 进行jwt鉴权 也就是对请求头中的jwt token进行验证
     /// </summary>
     /// <param name="services"></param>
     /// <param name="configuration"></param>
@@ -17,12 +17,12 @@ public static class DependencyInjection
     public static void AddJwtBearer(this IServiceCollection services, IConfiguration configuration)
     {
         //从配置文件中读取JwtSettings，并注入到容器中
-        var configurationSection=configuration.GetSection("JwtBearer");
+        var configurationSection = configuration.GetSection("JwtBearer");
         var jwtSettings = configurationSection.Get<JwtSettings>();
         if (jwtSettings is null) throw new NullReferenceException(nameof(jwtSettings));
         //注入依赖注入中-通过IOption依赖注入配置类，保好类型安全、可测试、易维护
         services.Configure<JwtSettings>(configurationSection);
-
+        // JwtBearerDefaults.AuthenticationScheme 指定默认的认证方案名称 Bearer
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(
             options =>
             {
@@ -36,12 +36,14 @@ public static class DependencyInjection
                     ValidateAudience = true,
                     //验证是否过期
                     ValidateLifetime = true,
+                    //验证签名
                     ValidateIssuerSigningKey = true,
                     //用于签名的秘钥
                     ValidIssuer = jwtSettings.Issuer,
+                    //发行认证的秘钥
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(jwtSettings.Secret)
-                        )
+                    )
                 };
             });
     }
