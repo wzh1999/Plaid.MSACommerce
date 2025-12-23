@@ -36,6 +36,6 @@ public static class DependencyInjection
         {
             serviceConfiguration.ServiceAddress = new Uri(configuration["urls"]??configuration["applicationUrl"]);
         }, serviceCheck);
-        
+        // services.AddConsulDiscovery();
     }
 }

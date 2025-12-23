@@ -14,6 +14,7 @@ public class ServiceConfiguration
     /// <summary>
     /// 服务Id
     /// Guid.NewGuid().ToString() 默认创建一个GUID做为id
+    /// 用于区分不同分服务实例
     /// </summary>
     public string ServiceId { get; set; } = Guid.NewGuid().ToString();
 
