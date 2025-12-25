@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Plaid.MSACommerce.Infrastructure.Common\Plaid.MSACommerce.Infrastructure.Common.csproj" />
     <ProjectReference Include="..\..\..\..\shared\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore\Plaid.MSACommerce.Infrastructure.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Plaid.MSACommerceUservice.Core\Plaid.MSACommerce.Uservice.Core.csproj" />
   </ItemGroup>

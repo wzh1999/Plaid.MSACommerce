@@ -13,7 +13,7 @@ namespace Plaid.MSACommerce.Infrastructure.EntityFrameworkCore
     /// </summary>
     public static class DependencyInjection
     {
-        public static IServiceCollection AddInfrastructureCommon(this IServiceCollection services) {
+        public static IServiceCollection AddInfrastructureEfCore(this IServiceCollection services) {
 
             //依赖注入审计实体拦截类
             services.AddScoped<AuditEntityInterceptor>();

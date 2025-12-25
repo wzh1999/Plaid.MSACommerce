@@ -10,6 +10,7 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Plaid.MSACommerce.Infrastructure.Common;
 
 namespace Plaid.MSACommerce.Uservice.Infrastructure
 {
@@ -26,8 +27,10 @@ namespace Plaid.MSACommerce.Uservice.Infrastructure
         /// <returns></returns>
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
+            //加载Consul中的配置信息
+            services.AddInfrastructureCommon(configuration);
             //加载公共服务中的ef中的扩展方法配置信息
-            services.AddInfrastructureCommon();
+            services.AddInfrastructureEfCore();
             ConfigureEfCore(services, configuration);
             return services;
         }

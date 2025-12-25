@@ -29,10 +29,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-//添加授权中间件
-app.UseAuthentication();
-app.UseAuthorization();
+// app.UseHttpsRedirection();
+// //添加授权中间件
+// app.UseAuthentication();
+// app.UseAuthorization();
 //添加微服务统一配置中间件入口
 app.UseHttpCommon();
 
