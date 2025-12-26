@@ -14,7 +14,7 @@ using IResult = Plaid.MSACommerce.SharedKernel.Result.IResult;
 namespace Plaid.MSACommerce.HttpApi.Common.Infrastructure
 {
     /// <summary>
-    /// 扩展基础控制器
+    /// 扩展基础控制器，所有控制器都继承与它，提供MediatR的Sender实例和处理Http响应的方法
     /// </summary>
     public abstract class ApiControllerBase : ControllerBase
     {

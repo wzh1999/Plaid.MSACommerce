@@ -35,6 +35,7 @@ namespace Plaid.MSACommerce.AuthServer.Services
                     new Claim(ClaimTypes.Name,user.Username),
                     new Claim(ClaimTypes.MobilePhone,user.Phone??string.Empty)
                 },
+                //过期时间
                 expires: DateTime.Now.AddMinutes(jwtSettings.Value.AccessTokenExpirationMinutes),
                 signingCredentials: new SigningCredentials(
                     new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings.Value.Secret!)),
