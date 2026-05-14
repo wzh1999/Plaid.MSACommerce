@@ -7,6 +7,11 @@ using System.Text;
 
 namespace Plaid.MSACommerce.AuthServer.Services
 {
+    /// <summary>
+    /// 身份认证服务
+    /// </summary>
+    /// <param name="userService"></param>
+    /// <param name="jwtSettings"></param>
     public class IdentityService(IUserService userService, IOptions<JwtSettings> jwtSettings) : IIdentityService
     {
         /// <summary>
