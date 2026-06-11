@@ -6,6 +6,7 @@ public interface IServiceDiscpvery
 {
     /// <summary>
     /// 获取指定服务名称的所有实例地址
+    /// 根据服务名称获取对应的服务列表
     /// </summary>
     /// <param name="serviceName">服务名称</param>
     /// <returns></returns>

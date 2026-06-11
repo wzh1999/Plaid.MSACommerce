@@ -1,5 +1,7 @@
 ﻿using Ocelot.DependencyInjection;
+using Ocelot.Provider.Consul;
 using Plaid.MSACommerce.Authentication.JwtBearer;
+using Plaid.MSACommerce.WebGateway;
 
 var builder = WebApplication.CreateBuilder(args);
 //用于加载多配置管理器的
@@ -18,7 +20,8 @@ builder.Configuration.AddOcelot(
     //文件发生改变后可以自动重新加载
     reloadOnChange: true
     );
-builder.Services.AddOcelot();
+builder.Services.AddOcelot()
+    .AddConsul<IPConsulServiceBuilder>();
 
 //引入jwt验证的服务
 builder.Services.AddJwtBearer(builder.Configuration);
