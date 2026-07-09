@@ -32,4 +32,3 @@ dotnet ef migrations add Plaid --project ".\services\user\src\Plaid.MSACommerceU
 //分层的情况下也需要指定具体的路径
 dotnet ef database update --project ".\services\user\src\Plaid.MSACommerceUservice.Infrastructure" --startup-project ".\services\user\src\Plaid.MSACommerce.UserService.HttpApi\Plaid.MSACommerce.UserService.HttpApi.csproj"
 ```
-
