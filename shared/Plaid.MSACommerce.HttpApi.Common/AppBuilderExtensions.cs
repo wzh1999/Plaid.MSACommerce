@@ -17,15 +17,16 @@ public static class AppBuilderExtensions
     /// <returns></returns>
     public static IApplicationBuilder UseHttpCommon(this IApplicationBuilder app)
     {
+        app.UseCors("AllowAny");
         //从IOptions获取到配置集合，获取对应属性值
         var serviceCheck = app.ApplicationServices.GetRequiredService<IOptions<ServiceCheckConfiguration>>().Value;
-       //配置健康检查地址
+        //配置健康检查地址
         app.UseHealthChecks(serviceCheck.Path);
-       //认证
+        //认证
         app.UseAuthentication();
-       //授权
+        //授权
         app.UseAuthorization();
-       //异常处理
+        //异常处理
         app.UseExceptionHandler(_ => { });
         return app;
     }

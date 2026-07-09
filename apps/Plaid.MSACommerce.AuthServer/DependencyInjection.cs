@@ -11,6 +11,7 @@ namespace Plaid.MSACommerce.AuthServer
         {
             ConfigureUserService(services, configuration);
             ConfigureIdentity(services, configuration);
+            ConfigureCors(services);
             return services;
         }
 
@@ -26,6 +27,7 @@ namespace Plaid.MSACommerce.AuthServer
             //     .ConfigureHttpClient(clinet => { clinet.BaseAddress = new Uri(userServiceUrl); });
 
             #endregion
+
             //通用Http请求远程调用服务注入
             services.AddServiceClient<UserServiceClient>(
                 option => { option.LoadBalancingStrategy = LoadBalancingStrategy.RoundRobin; },
@@ -41,6 +43,26 @@ namespace Plaid.MSACommerce.AuthServer
             var jwtSettings = configuration.Get<JwtSettings>();
             if (jwtSettings is null) throw new NullReferenceException(nameof(jwtSettings));
             services.Configure<JwtSettings>(configurationSection);
+        }
+
+        /// <summary>
+        /// 通过CORS策略允许所有请求,包括OPTIONS请求,从而解决跨域问题
+        /// </summary>
+        /// <param name="services"></param>
+        private static void ConfigureCors(IServiceCollection services)
+        {
+            //添加跨域服务策略
+            services.AddCors(options =>
+            {
+                //Allowany(自定义的策略名称)策略,允许所有请求,包括OPTIONS请求
+                options.AddPolicy("Allowany", builder =>
+                {
+                    //允许所有的请求源,方法,头
+                    builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
+            });
         }
     }
 }

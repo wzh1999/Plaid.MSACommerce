@@ -39,6 +39,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+//管道中间件中添加跨域策略AllowAny
+app.UseCors("AllowAny");
+
 //提供端点出去用于建立心跳检查
 app.UseHealthChecks((serviceCheck.Path));
 
