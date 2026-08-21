@@ -4,13 +4,16 @@ namespace Plaid.MSACommerce.CommonServiceClient;
 /// <summary>
 /// 服务客户端实现类 继承自服务客户端接口
 /// </summary>
-public abstract class ServiceClient : IServiceClient
+// public abstract class ServiceClient : IServiceClient
+public class ServiceClient<TServiceApi>:IServiceClient<TServiceApi>where TServiceApi:class
 {
     /// <summary>
     /// 服务名称
     /// </summary>
-    public virtual string ServiceName { get; set; }
-
+    // public virtual string ServiceName { get; set; }
+    public string ServiceName { get; set; }
+    
+    public TServiceApi ServiceApi { get; set; }
     /// <summary>
     /// 构造函数注入
     /// </summary>

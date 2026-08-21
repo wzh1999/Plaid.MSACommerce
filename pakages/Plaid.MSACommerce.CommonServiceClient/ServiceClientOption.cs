@@ -4,5 +4,12 @@
 /// </summary>
 public class ServiceClientOption
 {
+    /// <summary>
+    /// 轮询策略
+    /// </summary>
     public LoadBalancingStrategy LoadBalancingStrategy { get; set; } = LoadBalancingStrategy.RoundRobin;
+    /// <summary>
+    /// 服务名称
+    /// </summary>
+    public string ServiceName { get; set; } = null!;
 }

@@ -57,7 +57,7 @@ public class TokenService(IOptions<JwtSettings> jwtSettings) : ITokenService
             ClockSkew = TimeSpan.Zero,
             ValidateIssuer = true,
             ValidateAudience = true,
-            ValidateLifetime = false,
+            ValidateLifetime = false, //过期时间不需要验证，因为是从过期令牌中获取用户
             ValidateIssuerSigningKey = true,
             ValidIssuer = jwtSettings.Value.Issuer,
             ValidAudience = jwtSettings.Value.Audience,

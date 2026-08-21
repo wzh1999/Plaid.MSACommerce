@@ -11,10 +11,10 @@ namespace Plaid.MSACommerce.AuthServer.Clients;
 /// <param name="serviceDiscpvery">注入服务发现</param>
 /// <param name="loadBalancer">注入负载均衡策略器</param>
 /// <param name="httpClient">注入http请求</param>
-public class UserServiceClient(IServiceDiscpvery serviceDiscpvery,
-    ILoadBalancer<UserServiceClient> loadBalancer,
-    HttpClient httpClient):ServiceClient(serviceDiscpvery,loadBalancer,httpClient)
-{
-    public override string ServiceName { get; set; }="Plaid.MSACommerce.UserService.HttpApi";
-    public readonly IUserService UserServiceApi=RestService.For<IUserService>(httpClient);
-}
+// public class UserServiceClient(IServiceDiscpvery serviceDiscpvery,
+//     ILoadBalancer<UserServiceClient> loadBalancer,
+//     HttpClient httpClient):ServiceClient(serviceDiscpvery,loadBalancer,httpClient)
+// {
+//     public override string ServiceName { get; set; }="Plaid.MSACommerce.UserService.HttpApi";
+//     public readonly IUserService UserServiceApi=RestService.For<IUserService>(httpClient);
+// }

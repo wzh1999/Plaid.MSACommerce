@@ -1,7 +1,9 @@
-﻿using Plaid.MSACommerce.AuthServer.Clients;
+﻿using Plaid.MSACommerce.AuthServer.Apis;
+using Plaid.MSACommerce.AuthServer.Clients;
 using Plaid.MSACommerce.AuthServer.Services;
 using Plaid.MSACommerce.CommonServiceClient;
 using Refit;
+using StackExchange.Redis;
 
 namespace Plaid.MSACommerce.AuthServer
 {
@@ -10,6 +12,7 @@ namespace Plaid.MSACommerce.AuthServer
         public static IServiceCollection AddHttpApi(this IServiceCollection services, IConfiguration configuration)
         {
             ConfigureUserService(services, configuration);
+            ConfigureRedis(services, configuration);
             ConfigureIdentity(services, configuration);
             ConfigureCors(services);
             return services;
@@ -29,14 +32,31 @@ namespace Plaid.MSACommerce.AuthServer
             #endregion
 
             //通用Http请求远程调用服务注入
-            services.AddServiceClient<UserServiceClient>(
-                option => { option.LoadBalancingStrategy = LoadBalancingStrategy.RoundRobin; },
-                client => { client.Timeout = TimeSpan.FromSeconds(1); });
+            // services.AddServiceClient<UserServiceClient>(
+            //     option => { option.LoadBalancingStrategy = LoadBalancingStrategy.RoundRobin; },
+            //     client => { client.Timeout = TimeSpan.FromSeconds(1); });
+
+            services.AddServiceClient<IUserServiceApi>(option =>
+            {
+                option.ServiceName = "Plaid.MSACommerce.UserService.HttpApi";
+                option.LoadBalancingStrategy = LoadBalancingStrategy.RoundRobin;
+            }, client => { client.Timeout = TimeSpan.FromSeconds(1); });
+        }
+
+        private static void ConfigureRedis(IServiceCollection services, IConfiguration configuration)
+        {
+            var redisConn = configuration.GetConnectionString("ConnectionStrings");
+            if (redisConn != null)
+            {
+                services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect(redisConn));
+            }
         }
 
         private static void ConfigureIdentity(IServiceCollection services, IConfiguration configuration)
         {
-            services.AddSingleton<IIdentityService, IdentityService>();
+            // services.AddSingleton<IIdentityService, IdentityService>();
+
+            services.AddSingleton<ITokenService, TokenService>();
 
             //从配置文件中读取JwtSettings,并注入到容器中
             var configurationSection = configuration.GetSection(nameof(JwtSettings));
