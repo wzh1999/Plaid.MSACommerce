@@ -43,6 +43,11 @@ namespace Plaid.MSACommerce.AuthServer
             }, client => { client.Timeout = TimeSpan.FromSeconds(1); });
         }
 
+        /// <summary>
+        /// 配置Redis连接
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
         private static void ConfigureRedis(IServiceCollection services, IConfiguration configuration)
         {
             var redisConn = configuration.GetConnectionString("ConnectionStrings");
