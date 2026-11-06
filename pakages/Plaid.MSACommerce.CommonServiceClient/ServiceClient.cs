@@ -1,4 +1,6 @@
-﻿using Plaid.MSACommerce.Consul.ServiceDiscovery;
+﻿using Refit;
+using Plaid.MSACommerce.Consul.ServiceDiscovery;
+using Plaid.MSACommerce.CommonServiceClient.AspNetCore;
 
 namespace Plaid.MSACommerce.CommonServiceClient;
 /// <summary>
@@ -12,7 +14,9 @@ public class ServiceClient<TServiceApi>:IServiceClient<TServiceApi>where TServic
     /// </summary>
     // public virtual string ServiceName { get; set; }
     public string ServiceName { get; set; }
-    
+    /// <summary>
+    /// API接口也就是 比如 IUserServiceApi接口 Refit调用方式
+    /// </summary>
     public TServiceApi ServiceApi { get; set; }
     /// <summary>
     /// 构造函数注入
@@ -20,13 +24,16 @@ public class ServiceClient<TServiceApi>:IServiceClient<TServiceApi>where TServic
     /// <param name="serviceDiscpvery">注入服务发现</param>
     /// <param name="loadBalancer">注入负载均衡器</param>
     /// <param name="httpClient">注入httpClient</param>
-    protected ServiceClient(IServiceDiscpvery serviceDiscpvery, ILoadBalancer loadBalancer, HttpClient httpClient)
+    protected ServiceClient(IServiceDiscpvery serviceDiscpvery, ILoadBalancer<TServiceApi> loadBalancer, HttpClient httpClient)
     {
+        //获取服务器名称
+        ServiceName = loadBalancer.ServiceName;
         //通过服务发现 传入服务名称获取服务列表包括服务地址和端口
         var serviceList = serviceDiscpvery.GetServicesAsync(ServiceName).Result;
         //根据服务地址和端口结合负载均衡器获取服务节点
         var serviceAddress = loadBalancer.GetNode(serviceList);
         //指定访问地址是什么
         httpClient.BaseAddress = new Uri($"http://{serviceAddress}");
+        ServiceApi=RestService.For<TServiceApi>(httpClient);
     }
 }

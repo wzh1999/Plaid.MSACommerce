@@ -5,4 +5,6 @@
 /// </summary>
 /// <param name="strategy"></param>
 /// <typeparam name="T"></typeparam>
-public class LoadBalancer<T>(LoadBalancingStrategy strategy) : LoadBalancer(strategy), ILoadBalancer<T> where T : class;
+
+// public class LoadBalancer<T>(LoadBalancingStrategy strategy) : LoadBalancer(strategy), ILoadBalancer<T> where T : class;
+ public class LoadBalancer<T>(ServiceClientOption option) : LoadBalancer(option), ILoadBalancer<T> where T : class;

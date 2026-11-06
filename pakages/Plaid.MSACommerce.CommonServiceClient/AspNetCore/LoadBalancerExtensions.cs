@@ -8,14 +8,18 @@ public static class LoadBalancerExtensions
     /// 扩展服务
     /// </summary>
     /// <param name="services">扩展服务</param>
-    /// <param name="strategy">负载均衡服务</param>
+    /// <param name="option">负载均衡服务选项</param>
     /// <typeparam name="T">约束 T必须是一个类型</typeparam>
     /// <returns></returns>
+    // public static IServiceCollection AddLoadBalancer<T>(this IServiceCollection services,
+    //     LoadBalancingStrategy strategy) where T : class
     public static IServiceCollection AddLoadBalancer<T>(this IServiceCollection services,
-        LoadBalancingStrategy strategy) where T : class
+        ServiceClientOption option) where T : class
     {
         //注入一个泛型负载均衡 单例模式 
-        services.AddSingleton<ILoadBalancer<T>>(new LoadBalancer<T>(strategy));
+        // services.AddSingleton<ILoadBalancer<T>>(new LoadBalancer<T>(strategy));
+        services.AddSingleton<ILoadBalancer<T>>(new LoadBalancer<T>(option));
+        
         return services;
     }
 }

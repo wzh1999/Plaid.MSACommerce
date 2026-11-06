@@ -30,7 +30,8 @@ public static class ServiceClientExtension
         services.AddConsulDiscovery();
         //注册泛型负载均衡器 表示为某一个客户端注册的 同时指定一个负载均衡策略
         // services.AddLoadBalancer<TServiceClient>(serviceClientOption.LoadBalancingStrategy);
-        services.AddLoadBalancer<TServiceApi>(serviceClientOption.LoadBalancingStrategy);
+        // services.AddLoadBalancer<TServiceApi>(serviceClientOption.LoadBalancingStrategy);
+        services.AddLoadBalancer<TServiceApi>(serviceClientOption);
         
         //注册HttpClient
         // services.AddHttpClient<TServiceClient>(configureHttpClient);

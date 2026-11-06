@@ -102,7 +102,7 @@ namespace Plaid.MSACommerce.AuthServer.Controllers
         }
 
         /// <summary>
-        /// 删除刷新token
+        /// 删除刷新token 这个接口请求必须需要用户登录才可以
         /// </summary>
         /// <returns></returns>
         [HttpDelete,Authorize]

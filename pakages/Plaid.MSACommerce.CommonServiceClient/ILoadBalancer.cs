@@ -5,6 +5,11 @@
 public interface ILoadBalancer
 {
     /// <summary>
+    /// 服务名称
+    /// </summary>
+    string ServiceName { get; set; }
+    
+    /// <summary>
     /// 根据节点列表获取一个节点
     /// </summary>
     /// <param name="nodes">服务列表</param>
