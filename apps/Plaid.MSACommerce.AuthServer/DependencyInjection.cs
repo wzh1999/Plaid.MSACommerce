@@ -35,7 +35,7 @@ namespace Plaid.MSACommerce.AuthServer
             // services.AddServiceClient<UserServiceClient>(
             //     option => { option.LoadBalancingStrategy = LoadBalancingStrategy.RoundRobin; },
             //     client => { client.Timeout = TimeSpan.FromSeconds(1); });
-
+            //将需要调用的api注册到客户端中有多个就注册多个 告诉api接口的服务一下配置到服务客户端中
             services.AddServiceClient<IUserServiceApi>(option =>
             {
                 option.ServiceName = "Plaid.MSACommerce.UserService.HttpApi";

@@ -12,6 +12,7 @@ public record UserDto(long Id, string Username, string? Phone);
 
 /// <summary>
 /// user服务 Refit调用方式
+/// 制定api接口
 /// </summary>
 public interface IUserServiceApi
 {

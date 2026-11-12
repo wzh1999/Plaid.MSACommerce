@@ -11,6 +11,7 @@ public static class ServiceClientExtension
 {
     /// <summary>
     /// 扩展方法
+    /// 注册服务客户端
     /// </summary>
     /// <param name="services">扩展服务</param>
     /// <param name="configureServiceClient">配置委托 配置服务客户端</param>
@@ -39,7 +40,7 @@ public static class ServiceClientExtension
         
         //注入服务 作用域方式 因为是在构造函数中注入的 所以要保证一次请求中只能实例化一次
         // services.AddScoped<TServiceClient>();
-        services.AddScoped<TServiceApi>();
+        services.AddScoped<IServiceClient<TServiceApi>,ServiceClient<TServiceApi>>();
 
     }
 }
